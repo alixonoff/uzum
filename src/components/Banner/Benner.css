@@ -1,0 +1,33 @@
+/* Carousel container uchun uslub */
+.carousel {
+  max-width: 800px;
+  margin: 0 auto; /* Markazlashtirish */
+}
+
+
+.carousel img {
+  object-fit: cover; /* Rasmni to'ldirish uchun */
+  height: 400px; 
+  border-radius: 16px;
+}
+
+
+.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out; 
+}
+
+/* Slaydlar orasidagi bo'sh joy yo'qolishi uchun */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+
+/* MEDIA */
+@media only screen and (max-width: 600px) {
+  .carousel{
+    max-width: 600px;
+  }
+}
